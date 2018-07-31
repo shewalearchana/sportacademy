@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MINI WEB</title>
+	<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+  <script type="text/javascript" src="script/login.js"></script>
+	<script type="text/javascript">
+   function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+ 
+  </script>
+</head>
+<body class="responsive" style="background-color: grey; background repeat:no-repeat;"">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"> SPORTS ACADEMY,Nasik</a>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home </a></li>
+        <li class="active"><a href="#">Gallary<span class="sr-only">(current)</span></a></li>
+        <li><a href="video.html">Video's</a></li>   
+         <li><a href="reg.html">New Registration</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+      </ul>
+    </div>
+  </div>
+  <marquee><b>Sports Gallary</b></marquee>
+</nav>
+
+<div class="container"><br></div>
+<div class="container">
+  <br><br>
+  
+<table border="4">
+  <tr>
+    <td>
+       <figure>
+        <img src="img/tennis.jpg" height="350" width="600px"> 
+        <figcaption>Tennis</figcaption>
+       </figure>
+    <td>
+        <figure>
+        <img src="img/football.jpg" height="350" width="600px"> 
+        <figcaption>Football</figcaption>
+       </figure>
+    </td> 
+  </tr>
+    <tr>
+    <td>
+      <figure>
+        <img src="img/hockey.jpg" height="350" width="600px"> 
+        <figcaption>Hockey</figcaption>
+      </figure>
+       
+    <td>
+        <figure>
+        <img src="img/cricket.jpg" height="350" width="600px"> 
+         <figcaption>Cricket</figcaption>
+        
+       </figure>
+    </td> 
+  </tr>
+  <tr>
+    <td>
+       <figure>
+        <img src="img/rs.jpg" height="350" width="600px"> 
+        <figcaption>Rifel Shooting</figcaption>
+      </figure>
+    <td>
+        <figure>
+        <img src="img/bs.jpg" height="350" width="600px"> 
+        <figcaption>Basket Ball</figcaption>
+        
+       </figure>
+    </td> 
+  </tr>
+</table>
+</div>
+<div id="id01" class="modal">
+  <form class="modal-content animate" name="loginform" method="post" action="view.php" onsubmit="return validate()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      Login (Only for Coach)
+    </div>
+
+    <div class="container">
+      <label><h4>Username</h4></label>
+      <input type="text" placeholder="Enter Username" name="uname"  id="uname" required class="form-control" id="username" />
+      <br>
+      <label><h4>Password</h4></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required class="form-control" id="password" />
+        <br>
+      <input type="submit" value="Login" id="submit" name="login" class="btn-base" />
+      
+    </div>
+
+   
+  </form>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

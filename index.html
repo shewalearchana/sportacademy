@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MINI WEB</title>
+	<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+  <script type="text/javascript" src="script/login.js"></script>
+	<script type="text/javascript">
+   function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+ 
+  </script>
+</head>
+<body class="responsive" style="background-color: #C0C0C0; background repeat:no-repeat;">
+
+<nav class="navbar navbar-default navbar-fixed-top" background-color : blue>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">SPORTS ACADEMY,Nasik</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="gallary.html">Gallary</a></li>
+        <li><a href="video.html">Video's</a></li>
+<!--         <li class="dropdown">
+          <a href="#"  onclick="myFunction()">Video's<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="myDropdown">
+            <li><a href="svg.html">HTML5 SVG</a></li>
+            <li class="divider"></li>
+            <li><a href="canvas.html">HTML5 CANVAS</a></li>
+          </ul>
+        </li> -->
+         <li><a href="reg.html">New Registration</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+	<div class="post-content container">
+				<div class="fusion-fullwidth fullwidth-box fusion-fullwidth-1  fusion-parallax-fixed nonhundred-percent-fullwidth home-welcome" style="border-color:#eae9e9;border-bottom-width: 0px;border-top-width: 0px;border-bottom-style: solid;border-top-style: solid;padding-bottom:25px;padding-top:0px;padding-left:0px;padding-right:0px;background-color:rgba(255,255,255,0);"><style type="text/css" scoped="scoped">.fusion-fullwidth-1 {
+                            padding-left: 0px !important;
+                            padding-right: 0px !important;
+                        }</style><div class="fusion-row"><h3 style="text-align: center;"><strong>Welcome to</strong></h3>
+<h3 style="text-align: center;"><strong>SPORTS ACADEMY </strong></h3>
+<h6 style="text-align: center;"><strong>Nashik , INDIA</strong></h6>
+<h2 style="text-align: center;"><strong>It's Not Whether You Get Knocked Down, It's Whether You Get Up</strong></h2>
+
+</div></div><div class="fusion-one-full fusion-layout-column fusion-column-last fusion-spacing-yes" style="margin-top:0px;margin-bottom:20px;"><div class="fusion-column-wrapper"><span class="fusion-imageframe imageframe-none imageframe-1 hover-type-none"> 
+	<!--img src="img/College-Photo.jpg" alt="" class="img-responsive" width="2000" height="640"/-->
+	<video width="1100" height="540" autoplay='true' controls muted="true">
+		<source src="img/first.mp4" type="video/mp4">
+	</video>
+
+	</span>
+ <!--  <div class="fusion-row"><div class="fusion-one-full fusion-layout-column fusion-column-last fusion-spacing-yes" style="margin-top:0px;margin-bottom:20px;"><div class="fusion-column-wrapper"><div class="fusion-title title fusion-title-size-two" style="margin-top:0px;margin-bottom:31px;"><!-- <h2 class="title-heading-left">About SPORTS</h2> --><div class="title-sep-container"><div class="title-sep sep-single"></div></div></div><div class="fusion-testimonials classic fusion-testimonials-1" data-random="0"><style type='text/css' scoped='scoped'>
+		#fusion-testimonials-1 a{border-color: #747474;}#fusion-testimonials-1 a:hover, #fusion-testimonials-1 .activeSlide{background-color: #747474;}
+		.fusion-testimonials.classic.fusion-testimonials-1 .author:after{border-top-color:#f6f6f6 !important;}</style><!-- <div class="reviews"><div class="review no-avatar><blockquote><q style="background-color:#f6f6f6;color:#747474;"><h1><font size = 5 color = White><i> About Sports Acadamy</i></font></h1> --> 
+<!-- <style>
+p {
+    border: 1px solid blue;
+     padding: 20px;
+}
+</style> -->
+ <h2>About Sports Academy</h2><br>
+<p> Sports Academy is a sports academy here we train and advice sports person. We focus on continues growth and success and help to grow, shine and win.<br> Our enthusiastic & dedicated team of coaches constantly looks for pioneering drills and <br> exercises  to suit the individual sportspersons needs instead  of relying on a one size fits all approach.<br>
+  <h2>Why Choose Us??</h2>
+  <h4><strong>Professional Coaching</strong></h4>
+ <p>We are providing coaching at introductory, intermediate, and Advance level. We are also running super batches where players ranked under.<br>
+  <h4><strong>Largest Infrastructure</strong></h4>
+ <p>We are having 3 academies with 5 tennis court, 2 basketball courts and 1 cricket and 1 football ground.<br>
+ <h4><strong>International Exposure</strong></h4>
+ <p>We impart training from international players & coaches also give international exposure to players by arranging camps.
+</p>
+</p></q></blockquote></div><div class="fusion-clearfix"></div></div></div><div class="fusion-clearfix"></div>
+		</div>
+			</div>  
+			</div>  
+			</div>
+	
+
+<div id="id01" class="modal">
+  <form class="modal-content animate" name="loginform" method="post" action="view.php" onsubmit="return validate()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      Login (Only for coach)
+    </div>
+
+    <div class="container">
+      <label><h4>Username</h4></label>
+      <input type="text" placeholder="Enter Username" name="uname"  id="uname" required class="form-control" id="username" />
+      <br>
+      <label><h4>Password</h4></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required class="form-control" id="password" />
+        <br>
+      <input type="submit" value="Login" id="submit" name="login" class="btn-base" />
+      
+    </div>
+
+   
+  </form>
+</div>
+
+
+  <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

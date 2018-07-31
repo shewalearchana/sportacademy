@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MINI WEB</title>
+	<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+  <script type="text/javascript" src="script/regis.js"></script>
+  <script type="text/javascript" src="script/login.js"></script>
+	<script type="text/javascript">
+   function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+ 
+  </script>
+</head>
+<body class="responsive" style="background-image: url('img/8s.jpg'); background repeat:no-repeat;">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button"  class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">SPORTS ACADEMY,Nashik</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallary.html">Gallary</a></li>
+        <li><a href="video.html">Video's</a></li>
+         <li class=" active"><a href="#">New Registration <span class="sr-only">(current)</span></a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container" >
+  <br><br><br>
+
+  <h3 style="color: yellow;"><dfn>Sports Student Registration Form</dfn></h3><br>
+ <form name="regForm" action="reg.php" method="post" enctype="multipart/form-data" onsubmit="return validate_form();">
+    
+    <label>Student Full Name :</label>&nbsp&nbsp <input type="text" name="studName" id="studName" size="86" placeholder="Surname Firstname Middlename"><br><br>
+     
+    <label>Residential Address :</label> <input type="text" name="address" id="address" size="86" placeholder="enter your permanent address"><br><br>
+    <label>City :</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <input type="text" name="city" id="city" placeholder="enter city name">
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label>State :</label>&nbsp&nbsp&nbsp&nbsp <input type="text" name="state" id="state" placeholder="enter state" size="20">
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+    <label>PIN code :</label> <input type="text" name="pin" id="pin" onkeypress="return isNumberKey(event)" placeholder="xxxxxx" size="4"><br><br>
+    <label>Gender :<input type="radio" name="gender" id="gender" value="male" checked>Male
+          <input type="radio" name="gender" id="gender" value="female">Female
+          <input type="radio" name="gender" id="gender" value="other">Other</label>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label>Date of Birth :</label> <input type="date" name="bday" id="bday" size="15" placeholder="dd-mmm-yyyy">
+    &nbsp&nbsp&nbsp&nbsp 
+    <label>Games :</label>&nbsp&nbsp
+      <input list="Games" name="games" id="games">
+        <datalist id="Games">
+          <option value="blank">select</option>
+            <option value="cricket">Cricket</option>
+          <option value="tennis">Tennis</option>
+          <option value="football">Football</option>
+          <option value="hockey">Hockey</option>
+          <option value="badminton">Badminton</option>
+          <option value="rifel">Rifel Shooting</option>
+          <option value="othres">others</option>
+        </datalist> <br><br>
+    <label>Email address :</label>&nbsp&nbsp&nbsp&nbsp <input type="email" name="mail" id="mail" size="50" placeholder="abc@xyzx.fh">
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+    <label>Mobile no :</label> <input type="text" name="scontact" id="scontact" onkeypress="return isNumberKey(event)" size="10" max="10"><br><br>
+    <label>Father`s name :</label>&nbsp&nbsp&nbsp <input type="text" name="in1" value ="Mr." size="3" readonly><input type="text" name="fatherName" size="80" id="fatherName" placeholder="Surname Firstname Middlename"><br><br>
+    
+    <label>Mother name :</label>&nbsp&nbsp&nbsp&nbsp <input type="text" name="in2" value ="Mrs." size="3" readonly><input type="text" name="motherName" size="80" id="motherName" placeholder="Surname Firstname Middlename"><br><br>
+
+        <input type="submit" value="submit" name="save" class="btn btn-success"> <input type="reset" class="btn btn-info"><br><br>
+
+    
+  </form>
+</div>
+
+<div id="id01" class="modal">
+  <form class="modal-content animate" name="loginform" method="post" action="view.php" onsubmit="return validate()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      Login (only for Coach)
+    </div>
+
+    <div class="container">
+      <label><h4>Username</h4></label>
+      <input type="text" placeholder="Enter Username" name="uname"  id="uname" required class="form-control" id="username" />
+      <br>
+      <label><h4>Password</h4></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required class="form-control" id="password" />
+        <br>
+      <input type="submit" value="Login" id="submit" name="login" class="btn-base" />
+      
+    </div>
+
+   
+  </form>
+</div>
+
+
+
+  <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
